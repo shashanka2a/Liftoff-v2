@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { Cpu, Fingerprint } from "lucide-react";
+import { Cpu } from "lucide-react";
 
 export default function Services() {
   const svgRefs = useRef<(SVGSVGElement | null)[]>([]);
@@ -123,9 +123,6 @@ export default function Services() {
 
         {/* Card 2: Brand */}
         <div className="group relative bg-[#0A0A0A] border border-white/10 p-8 rounded-none md:col-span-1 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 overflow-hidden hover-trigger flex flex-col justify-between">
-          <div className="absolute top-0 right-0 p-4 opacity-50">
-            <Fingerprint className="w-6 h-6" />
-          </div>
 
           <div className="w-full h-48 flex items-center justify-center my-auto relative z-10">
             <svg
