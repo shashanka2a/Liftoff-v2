@@ -58,7 +58,7 @@ export default function Work() {
         <span className="mono-font text-[#CCFF00] text-xs uppercase tracking-widest mb-2 block">
           [02] Flight Log
         </span>
-        <h2 className="text-6xl md:text-9xl font-bold tracking-tighter leading-[0.8]">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[0.9] display-font">
           SELECTED
           <br />
           <span
