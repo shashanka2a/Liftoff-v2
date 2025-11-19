@@ -148,13 +148,6 @@ export default function Hero() {
           Strategic Engineering
         </h2>
       </div>
-
-      {/* Decorative HUD Elements */}
-      <div className="absolute left-10 bottom-32 hidden md:flex flex-col gap-2 z-10 opacity-30">
-        <div className="w-40 h-[1px] bg-white"></div>
-        <div className="w-20 h-[1px] bg-white ml-4"></div>
-        <div className="w-10 h-[1px] bg-white ml-8"></div>
-      </div>
     </header>
   );
 }

@@ -57,9 +57,9 @@ export default function Footer() {
                   />
                   <button
                     type="submit"
-                    className="absolute right-0 bottom-3 text-[#CCFF00] hover:text-white transition-all duration-300 uppercase font-bold text-xs mono-font flex items-center gap-1 group/btn hover:gap-2"
+                    className="absolute right-0 bottom-3 text-[#CCFF00] hover:text-white transition-all duration-300 uppercase font-bold text-xs mono-font flex items-center gap-1.5 group/btn"
                   >
-                    Subscribe
+                    SUBSCRIBE
                     <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
                   </button>
                 </div>
@@ -194,11 +194,6 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Background Decorative Text */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[18vw] md:text-[16vw] lg:text-[14vw] font-bold text-white/5 whitespace-nowrap pointer-events-none z-0 select-none display-font">
-        LIFTOFF
       </div>
     </footer>
   );
