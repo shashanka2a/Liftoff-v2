@@ -10,7 +10,7 @@ const projects = [
     tagline: "/// The Art Of Loading Excellence",
     description:
       "Premium marketing platform design.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop",
     category: "Brand Identity • Web Design • UI/UX",
     client: "ADVERZEO",
     year: "2024",
