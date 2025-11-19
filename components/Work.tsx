@@ -10,7 +10,7 @@ const projects = [
     tagline: "/// The Art Of Loading Excellence",
     description:
       "Premium marketing platform design.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop",
+    image: "/Adverzeo.png",
     category: "Brand Identity • Web Design • UI/UX",
     client: "ADVERZEO",
     year: "2024",
@@ -26,7 +26,7 @@ const projects = [
     tagline: "/// Seamless Global Finance",
     description:
       "Seamless global finance with zero hidden fees and instant settlements.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2000&auto=format&fit=crop",
+    image: "/payflow.png",
     category: "Fintech • Web App • Design System",
     client: "PAYFLOW",
     year: "2024",
@@ -42,7 +42,7 @@ const projects = [
     tagline: "/// Reward Your Community",
     description:
       "Reward your community. No crypto. No complexity. Just connection.",
-    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=2000&auto=format&fit=crop",
+    image: "/InOrbyt.png",
     category: "Web3 • Platform Design • Brand Identity",
     client: "INORBYT",
     year: "2024",
