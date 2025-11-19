@@ -45,7 +45,7 @@ export default function Hero() {
           width="400"
           height="650"
           viewBox="0 0 200 400"
-          className="animate-float"
+          className="animate-float w-[200px] h-[325px] sm:w-[300px] sm:h-[488px] md:w-[400px] md:h-[650px]"
           ref={svgRef}
         >
           <line
@@ -115,15 +115,15 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="relative z-20 text-center px-4 max-w-6xl mx-auto mt-[-5vh]">
-        <div className="inline-flex items-center gap-2 border border-[#CCFF00]/30 px-4 py-1.5 rounded-full mb-8 bg-[#030303]/80 backdrop-blur-md animate-pulse shadow-[0_0_15px_rgba(204,255,0,0.15)]">
-          <span className="w-1.5 h-1.5 bg-[#CCFF00] rounded-full"></span>
-          <span className="mono-font text-[10px] md:text-xs text-[#CCFF00] tracking-[0.2em] uppercase font-bold">
+      <div className="relative z-20 text-center px-4 sm:px-6 max-w-6xl mx-auto mt-[-5vh]">
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 border border-[#CCFF00]/30 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full mb-6 sm:mb-8 bg-[#030303]/80 backdrop-blur-md animate-pulse shadow-[0_0_15px_rgba(204,255,0,0.15)]">
+          <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#CCFF00] rounded-full"></span>
+          <span className="mono-font text-[9px] sm:text-[10px] md:text-xs text-[#CCFF00] tracking-[0.1em] sm:tracking-[0.2em] uppercase font-bold">
             LIFTOFF™ SYSTEM READY
           </span>
         </div>
 
-        <h1 className="text-[10vw] leading-[0.85] font-bold tracking-tighter mix-blend-normal mb-4 relative select-none">
+        <h1 className="text-[12vw] sm:text-[10vw] leading-[0.85] font-bold tracking-tighter mix-blend-normal mb-3 sm:mb-4 relative select-none">
           <span
             className="text-transparent"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.5)" }}
@@ -143,7 +143,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        <h2 className="text-sm md:text-xl font-medium text-gray-400 mt-8 tracking-[0.2em] uppercase display-font max-w-2xl mx-auto leading-relaxed">
+        <h2 className="text-xs sm:text-sm md:text-xl font-medium text-gray-400 mt-6 sm:mt-8 tracking-[0.15em] sm:tracking-[0.2em] uppercase display-font max-w-2xl mx-auto leading-relaxed px-2">
           Premium Design &<br />
           Strategic Engineering
         </h2>

@@ -28,13 +28,13 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="services" className="py-20 px-6 md:px-20 border-t border-white/10">
-      <div className="flex justify-between items-end mb-16">
+    <section id="services" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-20 border-t border-white/10">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 sm:mb-12 md:mb-16 gap-4">
         <div>
           <span className="mono-font text-[#CCFF00] text-xs uppercase tracking-widest mb-2 block">
             [02] Services
           </span>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter display-font">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter display-font">
             CAPABILITIES
           </h2>
         </div>
@@ -48,17 +48,17 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-auto md:h-[600px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 h-auto md:h-[600px]">
         {/* Card 1: Product */}
-        <div className="group relative bg-[#0A0A0A] border border-white/10 p-8 rounded-none md:col-span-1 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 overflow-hidden hover-trigger flex flex-col justify-between">
-          <div className="absolute top-0 right-0 p-4 opacity-50">
-            <Cpu className="w-6 h-6" />
+        <div className="group relative bg-[#0A0A0A] border border-white/10 p-4 sm:p-6 md:p-8 rounded-none md:col-span-1 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 overflow-hidden hover-trigger flex flex-col justify-between touch-manipulation">
+          <div className="absolute top-0 right-0 p-2 sm:p-4 opacity-50">
+            <Cpu className="w-4 h-4 sm:w-6 sm:h-6" />
           </div>
 
-          <div className="w-full h-48 flex items-center justify-center my-auto relative z-10">
+          <div className="w-full h-32 sm:h-40 md:h-48 flex items-center justify-center my-auto relative z-10">
             <svg
               viewBox="0 0 100 100"
-              className="w-32 h-32 draw-svg group-hover:scale-110 transition-transform duration-500"
+              className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 draw-svg group-hover:scale-110 transition-transform duration-500"
             >
               <rect
                 x="20"
@@ -114,8 +114,8 @@ export default function Services() {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-2 uppercase">Product Design</h3>
-            <p className="text-sm opacity-70 mono-font">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2 uppercase">Product Design</h3>
+            <p className="text-xs sm:text-sm opacity-70 mono-font">
               UI/UX / Design Systems / Prototyping
             </p>
           </div>
@@ -127,12 +127,12 @@ export default function Services() {
         </div>
 
         {/* Card 2: Brand */}
-        <div className="group relative bg-[#0A0A0A] border border-white/10 p-8 rounded-none md:col-span-1 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 overflow-hidden hover-trigger flex flex-col justify-between">
+        <div className="group relative bg-[#0A0A0A] border border-white/10 p-4 sm:p-6 md:p-8 rounded-none md:col-span-1 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 overflow-hidden hover-trigger flex flex-col justify-between touch-manipulation">
 
-          <div className="w-full h-48 flex items-center justify-center my-auto relative z-10">
+          <div className="w-full h-32 sm:h-40 md:h-48 flex items-center justify-center my-auto relative z-10">
             <svg
               viewBox="0 0 100 100"
-              className="w-40 h-40 draw-svg group-hover:rotate-90 transition-transform duration-700"
+              className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 draw-svg group-hover:rotate-90 transition-transform duration-700"
             >
               <circle
                 cx="50"
@@ -168,8 +168,8 @@ export default function Services() {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-2 uppercase">Brand Identity</h3>
-            <p className="text-sm opacity-70 mono-font">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2 uppercase">Brand Identity</h3>
+            <p className="text-xs sm:text-sm opacity-70 mono-font">
               Logo / Strategy / Art Direction
             </p>
           </div>
@@ -180,15 +180,15 @@ export default function Services() {
         </div>
 
         {/* Card 3: Tech Stacked */}
-        <div className="md:col-span-1 flex flex-col gap-4 h-full">
-          <div className="group relative flex-1 bg-[#0A0A0A] border border-white/10 p-6 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 hover-trigger flex items-center justify-between">
+        <div className="md:col-span-1 flex flex-col gap-3 sm:gap-4 h-full">
+          <div className="group relative flex-1 bg-[#0A0A0A] border border-white/10 p-4 sm:p-6 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 hover-trigger flex items-center justify-between touch-manipulation min-h-[100px] sm:min-h-0">
             <div>
-              <h3 className="text-xl font-bold uppercase">Development</h3>
-              <p className="text-xs opacity-70 mono-font mt-1">
+              <h3 className="text-base sm:text-lg md:text-xl font-bold uppercase">Development</h3>
+              <p className="text-[10px] sm:text-xs opacity-70 mono-font mt-1">
                 Frontend / WebGL / Creative Coding
               </p>
             </div>
-            <svg viewBox="0 0 50 50" className="w-12 h-12 draw-svg">
+            <svg viewBox="0 0 50 50" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 draw-svg flex-shrink-0">
               <path
                 d="M10 25 L20 35 L40 15"
                 fill="none"
@@ -197,14 +197,14 @@ export default function Services() {
               />
             </svg>
           </div>
-          <div className="group relative flex-1 bg-[#0A0A0A] border border-white/10 p-6 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 hover-trigger flex items-center justify-between">
+          <div className="group relative flex-1 bg-[#0A0A0A] border border-white/10 p-4 sm:p-6 hover:bg-[#CCFF00] hover:text-black transition-all duration-500 hover-trigger flex items-center justify-between touch-manipulation min-h-[100px] sm:min-h-0">
             <div>
-              <h3 className="text-xl font-bold uppercase">Growth</h3>
-              <p className="text-xs opacity-70 mono-font mt-1">
+              <h3 className="text-base sm:text-lg md:text-xl font-bold uppercase">Growth</h3>
+              <p className="text-[10px] sm:text-xs opacity-70 mono-font mt-1">
                 SEO / Analytics / Campaigns
               </p>
             </div>
-            <svg viewBox="0 0 50 50" className="w-12 h-12 draw-svg">
+            <svg viewBox="0 0 50 50" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 draw-svg flex-shrink-0">
               <path
                 d="M10 40 L20 30 L30 35 L45 10"
                 fill="none"

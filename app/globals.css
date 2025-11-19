@@ -19,6 +19,13 @@
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     cursor: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      cursor: auto;
+    }
   }
 
   h1, h2, h3, h4, .display-font {
@@ -173,6 +180,12 @@
   .nav-active {
     background-color: rgba(255, 255, 255, 0.1);
     color: #CCFF00 !important;
+  }
+
+  /* Touch Optimization */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
