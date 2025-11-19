@@ -6,46 +6,49 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "Airscreen",
-    tagline: "/// Global Atmosphere Intelligence Network",
+    title: "Adverzeo",
+    tagline: "/// The Art Of Loading Excellence",
     description:
-      "A comprehensive digital overhaul for the leading air quality monitoring platform, utilizing WebGL data visualization to render invisible toxins in real-time.",
+      "Premium marketing platform design.",
     image: "https://images.unsplash.com/photo-1481487484168-9b995ecc1660?q=80&w=2000&auto=format&fit=crop",
-    category: "Web Design & Dev",
-    client: "AIRSCREEN INC.",
+    category: "Brand Identity • Web Design • UI/UX",
+    client: "ADVERZEO",
     year: "2024",
-    stack: "WEBGL / REACT",
+    stack: "BRAND IDENTITY / WEB DESIGN",
     output: "PLATFORM",
+    timeline: "2 Weeks",
     caseId: "ARCHIVE_01",
     layout: "left",
   },
   {
     id: 2,
     title: "Payflow",
-    tagline: "/// Liquid Currency Infrastructure",
+    tagline: "/// Seamless Global Finance",
     description:
-      "Rebranding a unicorn fintech startup to reflect speed, security, and the future of frictionless capital. A visual system built on fluid dynamics and speed.",
+      "Seamless global finance with zero hidden fees and instant settlements.",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop",
-    category: "Branding • Fintech",
+    category: "Fintech • Web App • Design System",
     client: "PAYFLOW",
     year: "2024",
-    stack: "IDENTITY / 3D",
-    output: "BRAND SYSTEM",
+    stack: "WEB APP / DESIGN SYSTEM",
+    output: "PLATFORM",
+    timeline: "1 Month",
     status: "DEPLOYED",
     layout: "right",
   },
   {
     id: 3,
-    title: "O-Days",
-    tagline: "/// Systematic Productivity Architecture",
+    title: "InOrbyt",
+    tagline: "/// Reward Your Community",
     description:
-      "A holistic mobile ecosystem for productivity, featuring adaptive dark mode, gesture-based navigation, and haptic feedback engineering.",
+      "Reward your community. No crypto. No complexity. Just connection.",
     image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop",
-    category: "Mobile Product",
-    client: "ODAYS",
-    year: "2023",
-    stack: "IOS / SWIFT",
-    output: "APP ECOSYSTEM",
+    category: "Web3 • Platform Design • Brand Identity",
+    client: "INORBYT",
+    year: "2024",
+    stack: "PLATFORM DESIGN / BRAND IDENTITY",
+    output: "PLATFORM",
+    timeline: "3 Weeks",
     caseId: "ARCHIVE_03",
     layout: "left",
   },
@@ -119,7 +122,7 @@ export default function Work() {
                       <div>CLIENT: {project.client}</div>
                       <div>YEAR: {project.year}</div>
                       <div>STACK: {project.stack}</div>
-                      <div>OUTPUT: {project.output}</div>
+                      <div>TIMELINE: {project.timeline}</div>
                     </div>
                     <a
                       href="#"
@@ -156,7 +159,7 @@ export default function Work() {
                       <div>CLIENT: {project.client}</div>
                       <div>YEAR: {project.year}</div>
                       <div>STACK: {project.stack}</div>
-                      <div>OUTPUT: {project.output}</div>
+                      <div>TIMELINE: {project.timeline}</div>
                     </div>
                     <div className="flex justify-start md:justify-end">
                       <a
