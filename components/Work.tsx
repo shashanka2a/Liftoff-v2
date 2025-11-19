@@ -19,6 +19,7 @@ const projects = [
     timeline: "2 Weeks",
     caseId: "ARCHIVE_01",
     layout: "left",
+    link: "https://www.adverzeo.online/",
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ const projects = [
     timeline: "1 Month",
     status: "DEPLOYED",
     layout: "right",
+    link: "https://www.payflow.cash/",
   },
   {
     id: 3,
@@ -51,6 +53,7 @@ const projects = [
     timeline: "3 Weeks",
     caseId: "ARCHIVE_03",
     layout: "left",
+    link: "https://www.inorbyt.club/",
   },
 ];
 
@@ -125,10 +128,12 @@ export default function Work() {
                       <div>TIMELINE: {project.timeline}</div>
                     </div>
                     <a
-                      href="#"
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-white border border-white/20 px-5 py-2 rounded-full uppercase font-bold tracking-widest text-[10px] hover:bg-[#CCFF00] hover:text-black hover:border-[#CCFF00] transition-all w-fit"
                     >
-                      Initiate Case Study
+                      View Live Project
                     </a>
                   </div>
                 </div>
@@ -163,10 +168,12 @@ export default function Work() {
                     </div>
                     <div className="flex justify-start md:justify-end">
                       <a
-                        href="#"
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-white border border-white/20 px-5 py-2 rounded-full uppercase font-bold tracking-widest text-[10px] hover:bg-[#CCFF00] hover:text-black hover:border-[#CCFF00] transition-all w-fit"
                       >
-                        Initiate Case Study
+                        View Live Project
                       </a>
                     </div>
                   </div>
