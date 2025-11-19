@@ -14,7 +14,7 @@ export default function Navigation() {
   const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section, header");
+    const sections = document.querySelectorAll("section, header, footer");
     const navLinks = document.querySelectorAll(".nav-link");
 
     const observerOptions = {
@@ -28,7 +28,12 @@ export default function Navigation() {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute("id");
           if (id) {
-            setActiveSection(id);
+            // If footer is visible, highlight "about" (Studio link)
+            if (id === "footer") {
+              setActiveSection("about");
+            } else {
+              setActiveSection(id);
+            }
           }
         }
       });

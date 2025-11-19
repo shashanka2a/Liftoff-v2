@@ -8,7 +8,7 @@ export default function Footer() {
   const [emailFocused, setEmailFocused] = useState(false);
 
   return (
-    <footer className="relative py-24 md:py-32 px-6 md:px-20 overflow-hidden border-t border-white/5">
+    <footer id="footer" className="relative py-24 md:py-32 px-6 md:px-20 overflow-hidden border-t border-white/5">
       {/* Decorative Grid Background */}
       <div className="absolute inset-0 opacity-[0.02] z-0">
         <div className="tech-grid w-full h-full"></div>
