@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "LIFTOFF™ | Strategic Digital Product Studio",
   description:
     "Premium digital product studio specializing in web design, branding, and creative engineering for ambitious brands.",
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({

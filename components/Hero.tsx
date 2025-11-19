@@ -123,7 +123,7 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="text-[12vw] leading-[0.85] font-bold tracking-tighter mix-blend-normal mb-4 relative select-none">
+        <h1 className="text-[10vw] leading-[0.85] font-bold tracking-tighter mix-blend-normal mb-4 relative select-none">
           <span
             className="text-transparent"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.5)" }}
