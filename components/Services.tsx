@@ -30,9 +30,14 @@ export default function Services() {
   return (
     <section id="services" className="py-20 px-6 md:px-20 border-t border-white/10">
       <div className="flex justify-between items-end mb-16">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter display-font">
-          CAPABILITIES
-        </h2>
+        <div>
+          <span className="mono-font text-[#CCFF00] text-xs uppercase tracking-widest mb-2 block">
+            [02] Services
+          </span>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter display-font">
+            CAPABILITIES
+          </h2>
+        </div>
         <div className="hidden md:block text-right">
           <div className="mono-font text-xs text-[#CCFF00] mb-1">
             SYS.CHECK: OK

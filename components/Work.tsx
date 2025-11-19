@@ -26,7 +26,7 @@ const projects = [
     title: "Payflow",
     tagline: "/// Seamless Global Finance",
     description:
-      "Seamless global finance with zero hidden fees and instant settlements.",
+      "Global fintech platform with instant settlements.",
     image: "/payflow.png",
     category: "Fintech • Web App • Design System",
     client: "PAYFLOW",
@@ -43,7 +43,7 @@ const projects = [
     title: "ThirdWeb",
     tagline: "/// Exceptional Web3 Experiences",
     description:
-      "A partner with ambitious teams to build exceptional Web3 experiences. From concept to launch, we bring your vision to life.",
+      "Web3 platform development and strategy.",
     image: "/ThirdWeb.png",
     category: "Web3 • Development • Strategy",
     client: "THIRDWEB",
@@ -62,7 +62,7 @@ export default function Work() {
     <section id="work" className="py-24">
       <div className="px-6 md:px-20 mb-16">
         <span className="mono-font text-[#CCFF00] text-xs uppercase tracking-widest mb-2 block">
-          [02] Flight Log
+          [03] Flight Log
         </span>
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[0.9] display-font">
           SELECTED
@@ -71,7 +71,7 @@ export default function Work() {
             className="text-transparent stroke-text"
             style={{ WebkitTextStroke: "2px #fff", opacity: 0.5 }}
           >
-            WORKS
+            WORK
           </span>
         </h2>
       </div>
@@ -84,7 +84,12 @@ export default function Work() {
           >
             {project.layout === "left" ? (
               <>
-                <div className="md:col-span-7 relative overflow-hidden aspect-[16/9] project-img-container">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="md:col-span-7 relative overflow-hidden aspect-[16/9] project-img-container block cursor-pointer"
+                >
                   <div className="w-full h-full bg-[#111]">
                     <Image
                       src={project.image}
@@ -100,7 +105,7 @@ export default function Work() {
                   <div className="absolute top-4 right-4">
                     <ArrowUpRight className="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform group-hover:translate-x-2 group-hover:-translate-y-2" />
                   </div>
-                </div>
+                </a>
                 <div className="md:col-span-5 px-6 md:px-0 flex flex-col h-full justify-center">
                   <div className="border-l-2 border-[#CCFF00] pl-6 transition-all duration-500 group-hover:border-white">
                     <div className="flex items-center gap-3 mb-2">
@@ -178,7 +183,12 @@ export default function Work() {
                     </div>
                   </div>
                 </div>
-                <div className="md:col-span-7 relative overflow-hidden aspect-[16/9] order-1 md:order-2 project-img-container">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="md:col-span-7 relative overflow-hidden aspect-[16/9] order-1 md:order-2 project-img-container block cursor-pointer"
+                >
                   <div className="w-full h-full bg-[#111]">
                     <Image
                       src={project.image}
@@ -194,7 +204,7 @@ export default function Work() {
                   <div className="absolute top-4 left-4">
                     <ArrowUpRight className="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform group-hover:translate-x-2 group-hover:-translate-y-2" />
                   </div>
-                </div>
+                </a>
               </>
             )}
           </div>
