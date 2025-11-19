@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #030303;
+  --text-color: #f0f0f0;
+  --accent-color: #CCFF00;
+  --secondary-accent: #6E44FF;
+  --grid-color: rgba(204, 255, 0, 0.08);
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  h1, h2, h3, h4, .display-font {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .mono-font {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  /* Custom Cursor */
+  #cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--accent-color);
+    background: transparent;
+    transform: translate(-50%, -50%) rotate(45deg);
+    pointer-events: none;
+    z-index: 9999;
+    transition: all 0.1s ease-out;
+    mix-blend-mode: difference;
+  }
+
+  #cursor::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    border: 1px dashed var(--accent-color);
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+    opacity: 0.3;
+  }
+
+  #cursor.hovered {
+    width: 80px;
+    height: 80px;
+    background: var(--accent-color);
+    border-color: transparent;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Floating Animation for Hero Graphic */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Refined Premium Hover Effects */
+  .project-img-container {
+    overflow: hidden;
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .project-img-container img {
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+    transform: scale(1.0);
+  }
+
+  .group:hover .project-img-container img {
+    transform: scale(1.05);
+  }
+
+  /* Grid Background */
+  .tech-grid {
+    background-image: 
+      linear-gradient(var(--grid-color) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+  }
+
+  /* Floating Dock */
+  .glass-dock {
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+
+  /* Text Reveal */
+  .char-reveal span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .char-reveal.active span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Scanline Animation */
+  .scanline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(204, 255, 0, 0.1);
+    animation: scan 6s linear infinite;
+    z-index: 50;
+    pointer-events: none;
+  }
+
+  /* Marquee */
+  .marquee-strip {
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  }
+
+  /* Stroke Animation for SVGs */
+  .draw-svg path, .draw-svg circle, .draw-svg rect {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset 2s ease-in-out;
+  }
+  .draw-svg.active path, .draw-svg.active circle, .draw-svg.active rect {
+    stroke-dashoffset: 0;
+  }
+
+  /* Utility for Technical look */
+  .corner-marker {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--accent-color);
+    transition: all 0.3s ease;
+  }
+  .corner-tl { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+  .corner-tr { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+  .corner-bl { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+  .corner-br { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+
+  .hover-trigger:hover .corner-marker {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Active Nav State */
+  .nav-active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #CCFF00 !important;
+  }
+}
+
