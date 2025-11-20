@@ -680,7 +680,7 @@ const Footer = ({ isDark }: FooterProps) => {
 
 // --- Main App Component ---
 export default function BorealisPage() {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
 
   const toggleTheme = () => setIsDark(!isDark);
 
