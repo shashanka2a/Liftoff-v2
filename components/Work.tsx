@@ -55,6 +55,23 @@ const projects = [
     layout: "left",
     link: "https://thirdweb.academy/",
   },
+  {
+    id: 4,
+    title: "Borealis XR",
+    tagline: "/// The Future is Virtually Zero",
+    description:
+      "AI-powered XR platform for construction safety and training.",
+    image: "/borealis.png",
+    category: "Web3 • XR Platform • AI/VR",
+    client: "BOREALIS",
+    year: "2024",
+    stack: "XR PLATFORM / AI / VR",
+    output: "PLATFORM",
+    timeline: "2 Months",
+    caseId: "ARCHIVE_04",
+    layout: "right",
+    link: "https://www.liftoff.design/borealis",
+  },
 ];
 
 export default function Work() {
