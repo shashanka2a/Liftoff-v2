@@ -685,6 +685,14 @@ export default function BorealisPage() {
   const toggleTheme = () => setIsDark(!isDark);
 
   useEffect(() => {
+    // Ensure cursor is visible on desktop for Borealis page
+    const originalBodyCursor = document.body.style.cursor;
+    const originalHtmlCursor = document.documentElement.style.cursor;
+    
+    // Force cursor to be visible
+    document.body.style.cursor = 'auto';
+    document.documentElement.style.cursor = 'auto';
+    
     // Add dynamic styles
     const styleId = 'borealis-dynamic-styles';
     let styleElement = document.getElementById(styleId) as HTMLStyleElement;
@@ -715,6 +723,8 @@ export default function BorealisPage() {
     return () => {
       const element = document.getElementById(styleId);
       if (element) element.remove();
+      document.body.style.cursor = originalBodyCursor || '';
+      document.documentElement.style.cursor = originalHtmlCursor || '';
     };
   }, [isDark]);
 
@@ -738,6 +748,25 @@ export default function BorealisPage() {
         @keyframes pulse {
             0%, 100% { opacity: 0.4; }
             50% { opacity: 0.15; }
+        }
+        
+        /* Ensure cursor is always visible on Borealis page */
+        body {
+          cursor: auto !important;
+        }
+        
+        /* Fix cursor visibility in all interactive and visual elements */
+        * {
+          cursor: inherit !important;
+        }
+        
+        button, a, [role="button"], input, textarea, select, [onclick] {
+          cursor: pointer !important;
+        }
+        
+        /* Ensure cursor is visible even in elements with mix-blend-mode */
+        [style*="mix-blend-mode"], .mix-blend-multiply, .mix-blend-difference {
+          cursor: auto !important;
         }
       `}} />
 
