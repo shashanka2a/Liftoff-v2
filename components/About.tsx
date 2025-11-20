@@ -9,7 +9,7 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
         <div className="md:col-span-4 lg:col-span-5">
           <span className="mono-font text-[#CCFF00] text-xs md:text-sm uppercase tracking-widest mb-4 md:mb-6 block">
-            [01] Mission Profile
+            [01] Mission
           </span>
           <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight display-font">
             We architect digital<br />

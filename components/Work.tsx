@@ -13,7 +13,7 @@ const projects = [
     image: "/Adverzeo.png",
     category: "Brand Identity • Web Design • UI/UX",
     client: "ADVERZEO",
-    year: "2024",
+    year: "2025",
     stack: "BRAND IDENTITY / WEB DESIGN",
     output: "PLATFORM",
     timeline: "2 Weeks",
@@ -30,7 +30,7 @@ const projects = [
     image: "/payflow.png",
     category: "Fintech • Web App • Design System",
     client: "PAYFLOW",
-    year: "2024",
+    year: "2025",
     stack: "WEB APP / DESIGN SYSTEM",
     output: "PLATFORM",
     timeline: "1 Month",
@@ -40,36 +40,19 @@ const projects = [
   },
   {
     id: 3,
-    title: "ThirdWeb",
-    tagline: "/// Exceptional Web3 Experiences",
-    description:
-      "Web3 platform development and strategy.",
-    image: "/ThirdWeb.png",
-    category: "Web3 • Development • Strategy",
-    client: "THIRDWEB",
-    year: "2024",
-    stack: "WEB3 / DEVELOPMENT",
-    output: "PLATFORM",
-    timeline: "Ongoing",
-    caseId: "ARCHIVE_03",
-    layout: "left",
-    link: "https://thirdweb.academy/",
-  },
-  {
-    id: 4,
     title: "Borealis XR",
     tagline: "/// The Future is Virtually Zero",
     description:
-      "AI-powered XR platform for construction safety and training.",
+      "AI-powered XR platform for construction safety.",
     image: "/borealis.png",
     category: "Web3 • XR Platform • AI/VR",
     client: "BOREALIS",
-    year: "2024",
+    year: "2025",
     stack: "XR PLATFORM / AI / VR",
     output: "PLATFORM",
     timeline: "2 Months",
-    caseId: "ARCHIVE_04",
-    layout: "right",
+    caseId: "ARCHIVE_03",
+    layout: "left",
     link: "https://www.liftoff.design/borealis",
   },
 ];
@@ -79,7 +62,7 @@ export default function Work() {
     <section id="work" className="py-12 sm:py-16 md:py-24">
       <div className="px-4 sm:px-6 md:px-20 mb-8 sm:mb-12 md:mb-16">
         <span className="mono-font text-[#CCFF00] text-xs uppercase tracking-widest mb-2 block">
-          [03] Flight Log
+          [03] Work
         </span>
         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[0.9] display-font">
           SELECTED
