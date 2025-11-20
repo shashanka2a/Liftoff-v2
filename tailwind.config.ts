@@ -24,6 +24,7 @@ const config: Config = {
         float: "float 6s ease-in-out infinite",
         marquee: "scrollText 20s linear infinite",
         scan: "scan 6s linear infinite",
+        "pulse-slow": "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       keyframes: {
         float: {
