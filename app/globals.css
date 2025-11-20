@@ -12,6 +12,14 @@
   --grid-color: rgba(204, 255, 0, 0.08);
 }
 
+.light {
+  --bg-color: #fafafa;
+  --text-color: #030303;
+  --accent-color: #CCFF00;
+  --secondary-accent: #6E44FF;
+  --grid-color: rgba(204, 255, 0, 0.15);
+}
+
 @layer base {
   body {
     background-color: var(--bg-color);
@@ -117,6 +125,12 @@
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
   }
 
+  .light .glass-dock {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  }
+
   /* Text Reveal */
   .char-reveal span {
     display: inline-block;
@@ -179,6 +193,11 @@
   /* Active Nav State */
   .nav-active {
     background-color: rgba(255, 255, 255, 0.1);
+    color: #CCFF00 !important;
+  }
+
+  .light .nav-active {
+    background-color: rgba(0, 0, 0, 0.1);
     color: #CCFF00 !important;
   }
 

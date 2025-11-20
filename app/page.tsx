@@ -52,11 +52,11 @@ export default function Home() {
       <Scanline />
 
       {/* Fixed Technical Elements */}
-      <div className="fixed top-6 left-6 z-40 mix-blend-difference text-white mono-font text-xs hidden md:block">
+      <div className="fixed top-6 left-6 z-40 mix-blend-difference text-black dark:text-white mono-font text-xs hidden md:block">
         <div>COORD: 34.0522° N</div>
         <div>SYS: ONLINE</div>
       </div>
-      <div className="fixed top-6 right-6 z-40 mix-blend-difference text-white mono-font text-xs text-right hidden md:block">
+      <div className="fixed top-6 right-6 z-40 mix-blend-difference text-black dark:text-white mono-font text-xs text-right hidden md:block">
         <div>LIFTOFF.OS v2.5</div>
         <TimeDisplay />
       </div>

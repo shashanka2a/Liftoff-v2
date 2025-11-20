@@ -17,9 +17,9 @@ export default function About() {
           </h3>
         </div>
         <div className="md:col-span-8 lg:col-span-7 flex items-center">
-          <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed md:leading-tight font-light text-gray-300">
+          <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed md:leading-tight font-light text-gray-700 dark:text-gray-300">
             Traditional agencies build websites. We engineer{" "}
-            <span className="text-white font-medium border-b-2 border-[#CCFF00] pb-1">
+            <span className="text-black dark:text-white font-medium border-b-2 border-[#CCFF00] pb-1">
               digital ecosystems
             </span>{" "}
             that propel brands beyond the atmosphere.
